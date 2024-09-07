@@ -18,7 +18,11 @@ namespace EMA
         }
 
         public virtual void Update() => Modules.Update();
-
+        
+        public T GetModule<T>() where T : IEntityModule
+        {
+            return Modules.GetModule<T>();
+        }
 
         public virtual void SafeDestroy()
         {

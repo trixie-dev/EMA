@@ -18,7 +18,7 @@ namespace EMA.Examples
                 .Initialize(this);
         
             // events 
-            Modules.GetSystem<EntityInput>().OnInputReceivedEvent += Modules.GetSystem<EntityMover>().Move;
+            GetModule<EntityInput>().OnInputReceivedEvent += GetModule<EntityMover>().Move;
         }
     
         public override void Update()

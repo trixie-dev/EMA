@@ -35,7 +35,7 @@ namespace EMA
             }
         }
 
-        public T GetSystem<T>() where T : IEntityModule
+        public T GetModule<T>() where T : IEntityModule
         {
             foreach (var component in _modules)
             {
