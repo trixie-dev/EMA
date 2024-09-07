@@ -1,31 +1,18 @@
-using EMA;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class ${CLASS} : Entity
+public class EMAEntity : MonoBehaviour
 {
-    public override void Initialize(int entityId)
+    // Start is called before the first frame update
+    void Start()
     {
-        base.Initialize(entityId);
         
-        // component registration
-        //Components
-        //        .Add<EntityComponentExample>()
-        //        .Initialize(this);
-        
-        // events 
-        
-    }
-    
-    public override void Update()
-    {
-        base.Update();
-        // additional update logic
     }
 
-    public override void SafeDestroy()
+    // Update is called once per frame
+    void Update()
     {
-        // additional destroy logic
-       
-        // ------------------------
-        base.SafeDestroy();
+        
     }
 }
