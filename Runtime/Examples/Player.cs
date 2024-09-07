@@ -1,4 +1,4 @@
-namespace ECA.Examples
+namespace EMA.Examples
 {
     public class Player : Entity
     {
@@ -11,14 +11,14 @@ namespace ECA.Examples
         {
             base.Initialize(entityId);
             // component registration
-            Components
-                .Add<EntityComponentExample>()
+            Modules
+                .Add<EntityModuleExample>()
                 .Add<EntityInput>()
                 .Add<EntityMover>()
                 .Initialize(this);
         
             // events 
-            Components.GetSystem<EntityInput>().OnInputReceivedEvent += Components.GetSystem<EntityMover>().Move;
+            Modules.GetSystem<EntityInput>().OnInputReceivedEvent += Modules.GetSystem<EntityMover>().Move;
         }
     
         public override void Update()

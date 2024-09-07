@@ -1,11 +1,11 @@
 using UnityEngine.Events;
 
-namespace ECA
+namespace EMA
 {
     /// <summary>
     /// If you need to create a special component for an entity, use this interface.
     /// </summary>  
-    public interface IEntityComponent
+    public interface IEntityModule
     {
         public IEntity Entity { get; set; }
         public bool Enabled { get; set; }

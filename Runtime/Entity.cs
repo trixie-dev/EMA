@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ECA
+namespace EMA
 {
     public class Entity : MonoBehaviour, IEntity
     {
@@ -8,7 +8,7 @@ namespace ECA
         public GameObject GameObject { get; set; }
         public Transform Transform => gameObject.transform;
 
-        public Components Components { get; set; } = new Components();
+        public Modules Modules { get; set; } = new Modules();
 
 
         public virtual void Initialize(int entityId)
@@ -17,7 +17,7 @@ namespace ECA
             GameObject = (this).gameObject;
         }
 
-        public virtual void Update() => Components.Update();
+        public virtual void Update() => Modules.Update();
 
 
         public virtual void SafeDestroy()

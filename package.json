@@ -1,16 +1,16 @@
 {
-  "name": "com.trixie.eca",
+  "name": "com.trixie.ema",
   "author": "trixie-dev",
-  "displayName": "ECA",
-  "description": "ECA - is a partial architecture of the project, which describes entities and their systems (components). Convenient and easy to use.",
+  "displayName": "EMA",
+  "description": "EMA - is a partial architecture of the project, which describes entities and their modules. Convenient and easy to use.",
   "unity": "2022.3",
   "version": "2023.6.22",
   "keywords": [
-    "eca"
+    "ema"
   ],
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/trixie-dev/ECA.git"
+    "url": "https://github.com/trixie-dev/EMA.git"
   }
 }

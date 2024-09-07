@@ -1,24 +1,24 @@
 using System.Collections.Generic;
 
-namespace ECA
+namespace EMA
 {
     /// <summary>
     /// Components is a class that stores, initializes, and updates all entity components.
     /// </summary>  
-    public class Components
+    public class Modules
     {
-        private List<IEntityComponent> _components = new List<IEntityComponent>();
+        private List<IEntityModule> _modules = new List<IEntityModule>();
 
-        public Components Add<T>() where T : IEntityComponent, new()
+        public Modules Add<T>() where T : IEntityModule, new()
         {
             var component = new T();
-            _components.Add(component);
+            _modules.Add(component);
             return this;
         }
 
         public void Initialize(IEntity entity)
         {
-            foreach (var component in _components)
+            foreach (var component in _modules)
             {
                 component.Initialize(entity);
             }
@@ -26,7 +26,7 @@ namespace ECA
 
         public void Update()
         {
-            foreach (var component in _components)
+            foreach (var component in _modules)
             {
                 if (component.Enabled)
                 {
@@ -35,9 +35,9 @@ namespace ECA
             }
         }
 
-        public T GetSystem<T>() where T : IEntityComponent
+        public T GetSystem<T>() where T : IEntityModule
         {
-            foreach (var component in _components)
+            foreach (var component in _modules)
             {
                 if (component is T)
                 {

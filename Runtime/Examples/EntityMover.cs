@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace ECA.Examples
+namespace EMA.Examples
 {
-    public class EntityMover : EntityComponent
+    public class EntityMover : EntityModule
     {
         private float _speed = 5f;
         private Vector2 _desiredDirection;

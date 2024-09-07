@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace ECA.Examples
+namespace EMA.Examples
 {
-    public class EntityInput : EntityComponent
+    public class EntityInput : EntityModule
     {
         public float HorizontalInput { get; private set; }
         public float VerticalInput { get; private set; }

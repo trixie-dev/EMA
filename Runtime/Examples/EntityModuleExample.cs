@@ -1,6 +1,6 @@
-namespace ECA.Examples
+namespace EMA.Examples
 {
-    public class EntityComponentExample : EntityComponent
+    public class EntityModuleExample : EntityModule
     {
         public override void Initialize(IEntity entity)
         {
