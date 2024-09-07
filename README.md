@@ -1,6 +1,6 @@
-# Entity Modules Architecture
+# Entity-Module Architecture
 
-**EMA** - is a partial architecture of the project, which describes entities and their modules. Convenient and easy to use.
+**EMA** - is a partial architecture of the Unity project, which describes entities and their modules. Convenient and easy to use.
 <br/>
 
 ## Installation
