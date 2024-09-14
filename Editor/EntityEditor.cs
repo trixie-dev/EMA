@@ -5,7 +5,7 @@ using EMA;
 using UnityEngine;
 
 
-    [CustomEditor(typeof(Entity), true)]
+    [CustomEditor(typeof(EMA.Entity), true)]
     public class EntityEditor : Editor
     {
         public override void OnInspectorGUI()
