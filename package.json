@@ -5,7 +5,6 @@
   "displayName": "EMA",
   "description": "EMA - is a partial architecture of the project, which describes entities and their modules. Convenient and easy to use.",
   "unity": "2022.3",
-  "version": "2023.6.22",
   "keywords": [
     "ema"
   ],
