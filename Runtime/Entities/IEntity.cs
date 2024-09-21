@@ -11,6 +11,7 @@ namespace EMA
         public ModulesManager ModulesManager { get; set; }
         public void Initialize(int entityId);
         public void Initialized();
+        public T GetModule<T>() where T : IEntityModule;
         public void Update();
         public void SafeDestroy();
     }

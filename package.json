@@ -1,6 +1,6 @@
 {
   "name": "com.trixie.ema",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "trixie-dev",
   "displayName": "EMA",
   "description": "EMA - is a partial architecture of the project, which describes entities and their modules. Convenient and easy to use.",
